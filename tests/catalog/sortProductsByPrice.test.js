@@ -47,7 +47,7 @@ describe("sortProductsByPrice", () => {
   });
   test("направление по умолчанию не меняет исходный массив всех товаров", () => {
     const source = [...products];
-    sortProductsByPrice(source, "");
+    sortProductsByPrice(source);
     expect(source).toEqual(products);
   });
 });
